@@ -1,0 +1,17 @@
+@mixin btn($color, $background) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: $color;
+  background: $background;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,183 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.teaching {
+  padding: 140px 0 120px;
+  background: #2A3A56;
+  position: relative;
+  z-index: 1;
+
+  h2 {
+    color: #fff;
+    max-width: 550px;
+    margin: 0 auto 70px;
+
+    .section-head {
+      color: #fff;
+
+      &:after, &:before {
+        border-color: #fff;
+        width: calc(100% + 40px);
+        height: calc(100% + 25px);
+        border-radius: 48%;
+        transform: translate(-53%, -50%) rotate(-3deg);
+      }
+
+      &:after {
+        transform: translate(-53%, -50%) rotate(3deg);
+      }
+
+    }
+  }
+
+  .planets {
+    right: -424px;
+    top: 40px;
+  }
+
+  .parallax-left {
+    left: 29px;
+    top: -100%;
+
+    .scene {
+      top: 50px;
+      left: 20px;
+    }
+  }
+
+  .parallax-right {
+    right: 11px;
+    top: -124%;
+
+    .scene {
+      top: 50px;
+      right: 5px;
+    }
+  }
+}
+
+.teaching-content {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+
+  > img {
+    &:first-of-type {
+      position: absolute;
+      top: 206px;
+      left: 36.09%;
+    }
+
+    &:last-of-type {
+      position: absolute;
+      top: -151px;
+      left: -171px;
+      z-index: -1;
+    }
+  }
+
+  ul {
+    flex: 0 0 270px;
+    background: #3E5170;
+    box-shadow: 0 3px 16px rgba(43, 64, 83, 0.09);
+    list-style: url("../img/svg/check.svg");
+    padding: 35px;
+
+    &:first-of-type {
+      margin-right: 30px;
+      border-radius: 30px 0 0 0;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0 30px 0;
+    }
+
+    li {
+      color: #fff;
+      font-size: 16px;
+      line-height: 26px;
+      margin-left: 18px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  > div {
+    margin-left: 30px;
+    position: relative;
+
+    > img {
+      position: absolute;
+      top: -11px;
+      right: -31px;
+      z-index: -1;
+    }
+
+    p {
+      margin-bottom: 30px;
+
+      &:first-of-type {
+        max-width: 570px;
+        background: #fff;
+        box-shadow: 0 3px 16px rgba(43, 64, 83, 0.09);
+        border-radius: 15px;
+        padding: 20px 63px 20px 40px;
+        font-size: 16px;
+        line-height: 26px;
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 13px;
+          background: $green;
+        }
+      }
+
+      &:last-of-type {
+        font-size: 21px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #fff;
+        max-width: 537px;
+
+        strong {
+          color: $green;
+          font-weight: 700;
+        }
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 14px;
+        line-height: 22px;
+        color: #fff;
+        display: block;
+        margin-right: auto;
+      }
+
+      img {
+        width: 73px;
+        height: 73px;
+        object-fit: cover;
+
+        &:not(:last-of-type) {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+

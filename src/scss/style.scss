@@ -1,0 +1,36 @@
+@import "layout";
+
+//header
+@import "header/header";
+
+// footer
+@import "footer/footer";
+
+//assist
+@import "assist/buttons";
+@import "assist/img-bubbles";
+@import "assist/swiper";
+@import "assist/popup-form";
+@import "assist/planets";
+@import "assist/parallax";
+@import "assist/animate";
+
+// section
+@import "section/hero";
+@import "section/about-us";
+@import "section/values";
+@import "section/gallery";
+@import "section/privilege";
+@import "section/application";
+@import "section/discounts";
+@import "section/advantages";
+@import "section/teaching";
+@import "section/clubs";
+@import "section/location";
+@import "section/excursion";
+@import "section/price";
+@import "section/networks";
+@import "section/address";
+
+// media
+@import "media";

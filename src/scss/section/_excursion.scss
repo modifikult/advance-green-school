@@ -1,0 +1,109 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.excursion {
+  padding: 238px 0 170px;
+  position: relative;
+}
+
+.excursion-content {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 3px 16px rgba(43, 64, 83, 0.09);
+  border-radius: 60px 0;
+  padding: 112px 84px 70px;
+
+  .bubble-1, .bubble-2, .bubble-3 {
+    position: absolute;
+    box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(60px);
+    border-radius: 100%;
+    z-index: -5;
+  }
+
+  .bubble-1 {
+    width: 305px;
+    height: 305px;
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
+    bottom: -186%;
+    left: -120px;
+  }
+
+  .bubble-2 {
+    width: 221px;
+    height: 221px;
+    bottom: -253%;
+    right: -110px;
+  }
+
+  .bubble-3 {
+    width: 41px;
+    height: 41px;
+    bottom: 528%;
+    right: 85px
+  }
+
+  .bubble-2, .bubble-3 {
+    background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $green-gradient;
+  }
+
+  .section-bg {
+    img {
+      border-radius: 60px 0;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    max-width: 588px;
+    margin-bottom: 35px;
+    .section-head {
+      color: #fff;
+      &:after, &:before {
+        width: calc(100% + 30px);
+      }
+    }
+  }
+
+  form {
+    width: 50%;
+
+    label {
+      display: block;
+      width: 100%;
+      margin-bottom: 7px;
+
+      input {
+        width: 100%;
+        height: 74px;
+        background: #fff;
+        border-radius: 300px;
+        padding: 24px 33px;
+        border: none;
+
+        font-size: 16px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    button {
+      width: 100%;
+      height: 74px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  p {
+    max-width: 457px;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 10px 0 0 45px;
+    a {
+      color: #A5ACC4;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.planets {
+  position: absolute;
+
+  circle {
+    box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(60px);
+  }
+}
+

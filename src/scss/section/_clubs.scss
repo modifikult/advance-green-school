@@ -1,0 +1,147 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.clubs {
+  padding: 140px 0 120px;
+  position: relative;
+
+  h2 {
+    color: $second-color;
+    max-width: 625px;
+    margin: 0 auto 70px;
+    text-align: center;
+
+    .section-head {
+      &:after, &:before {
+        width: calc(100% + 40px);
+        height: calc(100% + 35px);
+        transform: translate(-52%, -50%) rotate(-3deg);
+      }
+
+      &:after {
+        transform: translate(-52%, -50%) rotate(3deg);
+      }
+    }
+  }
+
+  .bubble- {
+    &4, &5 {
+      border-radius: 100%;
+      position: absolute;
+      box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(60px);
+      z-index: 1;
+    }
+
+    &4 {
+      width: 114px;
+      height: 114px;
+      top: 10.78%;
+      right: 9.53%;
+      background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $green-gradient;
+    }
+
+    &5 {
+      width: 46px;
+      height: 46px;
+      top: 16.87%;
+      right: 14.27%;
+      background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
+    }
+  }
+
+  .parallax-left {
+    left: 29px;
+    top: -80%;
+
+    .scene {
+      top: 50px;
+      left: 20px;
+    }
+  }
+}
+
+.clubs-content {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  z-index: 5;
+
+  a {
+    &:not(:last-of-type) {
+      text-decoration: none;
+      display: flex;
+      width: calc((100% / 4) - (90px / 4));
+      height: 200px;
+      box-shadow: 0 3px 16px rgba(43, 64, 83, 0.09);
+      border-radius: 30px 0;
+      background: #fff;
+      transition: all .3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &:last-of-type {
+      width: calc(50% - 45px);
+      height: 74px;
+      margin: 0 15px;
+      align-self: center;
+    }
+  }
+
+  .bubble-1, .bubble-2, .bubble-3 {
+    position: absolute;
+    background: $blue-gradient;
+    opacity: 0.06;
+    border-radius: 100%;
+    z-index: -1;
+  }
+
+  .bubble-1 {
+    width: 291px;
+    height: 291px;
+    top: -105px;
+    left: -95px;
+  }
+
+  .bubble-2 {
+    width: 27px;
+    height: 27px;
+    top: -100px;
+    left: -90px;
+  }
+
+  .bubble-3 {
+    width: 12px;
+    height: 12px;
+    top: -115px;
+    left: -105px;
+  }
+}
+
+.club-item {
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  span {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $second-color;
+    text-align: center;
+  }
+}

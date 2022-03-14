@@ -1,0 +1,94 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.discounts {
+  position: relative;
+  .planets {
+    transform: scale(-1, 1);
+    left: -424px;
+    top: 0;
+  }
+
+  .parallax-left {
+    left: 29px;
+    top: -100%;
+
+    .scene {
+      top: 50px;
+      left: 20px;
+    }
+  }
+}
+
+.discounts-content {
+  padding: 80px 0 210px;
+  display: flex;
+  justify-content: center;
+  background: $fiolet-gradient;
+  border-radius: 0 60px;
+  position: relative;
+
+  > span {
+    position: absolute;
+    top: 45px;
+    right: 97px;
+    font-weight: 600;
+    font-size: 97.5773px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.08);
+    transform: rotate(-20.4deg);
+  }
+
+  > img {
+    position: absolute;
+    right: 0;
+    bottom: 26px;
+  }
+}
+
+.discounts-img {
+}
+
+.discounts-text {
+  margin-left: 120px;
+  padding-top: 60px;
+  position: relative;
+
+  .section-head {
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 35px;
+
+    &:after, &:before {
+      border-color: #fff;
+    }
+  }
+
+  span:not(.section-head) {
+    display: block;
+    font-size: 100px;
+    line-height: 120px;
+    font-weight: 600;
+    margin: 20px 0 6px;
+    color: #fff;
+  }
+
+  h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    max-width: 508px;
+  }
+
+  a {
+    width: 306px;
+    height: 74px;
+  }
+
+  svg {
+    position: absolute;
+    left: 281px;
+    bottom: 45px;
+  }
+}
+

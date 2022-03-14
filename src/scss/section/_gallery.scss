@@ -1,0 +1,125 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.gallery {
+  padding: 100px 0 130px;
+  position: relative;
+
+  .section-head {
+    margin: 0 0 80px 50%;
+    transform: translateX(-50%);
+  }
+
+  .bubble- {
+    &1, &2 {
+      border-radius: 100%;
+      position: absolute;
+      box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(60px);
+      z-index: -1;
+      background: radial-gradient(69.64% 69.64% at 29.76% 19.64%, rgba(255, 255, 255, 0.5) 0%, rgba(196, 196, 196, 0) 100%), $blue-gradient;
+    }
+  }
+
+  .bubble-1 {
+    width: 210px;
+    height: 210px;
+    bottom: 147px;
+    left: 13.28%;
+  }
+
+  .bubble-2 {
+    width: 46px;
+    height: 46px;
+    bottom: 357px;
+    left: 14.11%;
+  }
+
+  .planets {
+    right: -424px;
+    top: 481px;
+  }
+
+  .parallax-left {
+    left: 41px;
+    top: 70%;
+
+    .scene {
+      top: 50px;
+      left: 25px;
+    }
+  }
+
+  .parallax-right {
+    right: 0;
+    bottom: -23%;
+
+    .scene {
+      top: 50px;
+      right: 25px;
+    }
+  }
+}
+
+.gallery-swiper {
+}
+
+.gallery-swiper-wrapper {
+}
+
+.gallery-swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0 !important;
+
+  img {
+    object-fit: cover;
+    display: inline-block;
+
+    &:nth-of-type(1) {
+      width: 570px;
+      height: 372px;
+      margin: 0 30px 30px 0;
+      border-radius: 60px 0 0 0;
+    }
+
+    &:nth-of-type(2) {
+      width: 450px;
+      height: 519px;
+      margin: 0 30px 30px 0;
+      border-radius: 0 60px 0 0;
+    }
+
+    &:nth-of-type(3) {
+      width: 330px;
+      height: 291px;
+      margin: 108px 0 0 0;
+      border-radius: 0 60px 0 0;
+    }
+
+    &:nth-of-type(4) {
+      width: 447px;
+      height: 362px;
+      margin: -147px 30px 0 123px;
+      border-radius: 0 0 0 60px;
+    }
+
+    &:nth-of-type(5) {
+      width: 450px;
+      height: 314px;
+      margin: 0 30px 0 0;
+      border-radius: 0;
+    }
+
+    &:nth-of-type(6) {
+      width: 330px;
+      height: 434px;
+      margin: -120px 0 0 0;
+      border-radius: 0 0 60px 0;
+    }
+  }
+}
+
+.gallery-swiper-slide.swiper-slide-active {
+  opacity: 1 !important;
+}

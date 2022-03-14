@@ -1,0 +1,43 @@
+.img-bubbles {
+  border-radius: 100%;
+  width: 566px;
+  height: 566px;
+  padding: 41px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bubble-1, .bubble-2, .bubble-3 {
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: inset 0 4px 70px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(60px);
+  }
+
+  .bubble-1, .bubble-2 {
+    width: 66px;
+    height: 66px;
+  }
+
+  .bubble-1 {
+    top: 3.356%;
+    right: 2.457%;
+  }
+
+  .bubble-2 {
+    left: 4.256%;
+    bottom: 9.187%;
+  }
+
+  .bubble-3 {
+    width: 28px;
+    height: 28px;
+    top: 18.55%;
+    right: 0;
+  }
+
+
+}

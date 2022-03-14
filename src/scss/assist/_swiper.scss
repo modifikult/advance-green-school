@@ -1,0 +1,33 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.swiper-button-prev.swiper-button-prev-custom, .swiper-button-next.swiper-button-next-custom {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background: $green-gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 38px;
+
+  &:after {
+    content: none;
+  }
+}
+
+.swiper-button-prev.swiper-button-prev-custom {
+  left: auto;
+  right: 172px;
+
+  &:before {
+    content: url("../img/svg/swiper-button-prev.svg");
+  }
+}
+
+.swiper-button-next.swiper-button-next-custom {
+  right: 102px;
+  &:before {
+    content: url("../img/svg/swiper-button-next.svg");
+  }
+}
